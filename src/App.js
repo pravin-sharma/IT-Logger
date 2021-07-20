@@ -6,6 +6,9 @@ import SearchBar from './components/layout/SearchBar';
 import Logs from './components/logs/Logs';
 import AddBtn from './components/layout/AddBtn';
 import AddLogModal from './components/logs/AddLogModal';
+import EditLogModal from './components/logs/EditLogModal';
+import AddTechModal from './components/techs/AddTechModal';
+import ListTechModal from './components/techs/ListTechModal';
 
 const App = () => {
 
@@ -20,6 +23,9 @@ const App = () => {
       <div className='container'>
         <Logs />
         <AddLogModal />
+        <EditLogModal />
+        <AddTechModal />
+        <ListTechModal />
       </div>
       <AddBtn />
     </Fragment>
