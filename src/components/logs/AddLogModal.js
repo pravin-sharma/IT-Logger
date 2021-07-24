@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
 import M from 'materialize-css/dist/js/materialize.min.js';
+import {connect} from 'react-redux'
+import { addLog } from '../../actions/logActions';
+import PropTypes from 'prop-types'
 
-const AddLogModal = () => {
+const AddLogModal = ({addLog}) => {
 
     //add states
     const [message, setMessage] = useState("");
@@ -12,7 +15,15 @@ const AddLogModal = () => {
     const onSubmit = (e) => {
         e.preventDefault();
         if (message && tech) {
-            M.toast({ html: 'Log Added', classes: 'rounded green' })
+            let newLog = {
+                message,
+                tech,
+                attention,
+                Date: new Date()
+            }
+            addLog(newLog);
+
+            M.toast({ html: `Log Added`, classes: 'rounded green' })
             //clear form
             setMessage("");
             setTech("");
@@ -68,4 +79,8 @@ const AddLogModal = () => {
     )
 }
 
-export default AddLogModal;
+AddLogModal.prototype = {
+    addLog: PropTypes.func.isRequired,
+}
+
+export default connect(null, {addLog})(AddLogModal);
