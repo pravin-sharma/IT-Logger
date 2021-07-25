@@ -15,11 +15,14 @@ const AddLogModal = ({addLog}) => {
     const onSubmit = (e) => {
         e.preventDefault();
         if (message && tech) {
+
+            //TODO: get tech name by id, then add the log
+
             let newLog = {
                 message,
                 tech,
                 attention,
-                Date: new Date()
+                date: new Date()
             }
             addLog(newLog);
 

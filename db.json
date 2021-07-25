@@ -15,32 +15,18 @@
       "date": "2021-05-31T16:18:04.245Z"
     },
     {
-      "message": "1122 wireless down",
+      "message": "Firefox new update",
+      "tech": "3",
       "attention": true,
-      "tech": "Sara Wilson",
-      "date": "2021-05-31T15:46:48.690Z",
+      "date": "2021-07-25T07:25:51.780Z",
       "id": 3
     },
     {
-      "id": 4,
-      "message": "Workstation 026 is up and running",
-      "attention": false,
-      "tech": "Sara Wilson",
-      "date": "2021-05-31T19:57:35.544Z"
-    },
-    {
-      "message": "sadsd",
+      "message": "chrome deleted",
       "tech": "1",
-      "attention": true,
-      "Date": "2021-07-24T19:47:53.837Z",
-      "id": 5
-    },
-    {
-      "message": "dsadsad",
-      "tech": "3",
-      "attention": true,
-      "Date": "2021-07-24T19:48:57.110Z",
-      "id": 6
+      "attention": false,
+      "date": "2021-07-25T07:26:04.411Z",
+      "id": 4
     }
   ],
   "technicians": [
