@@ -37,10 +37,17 @@
     },
     {
       "id": 6,
-      "message": "test sync",
+      "message": "firefox sync",
       "tech": "1",
       "attention": true,
       "date": "2021-07-26T16:07:07.247Z"
+    },
+    {
+      "message": "Be happy",
+      "tech": "3",
+      "attention": false,
+      "date": "2021-07-26T18:21:46.503Z",
+      "id": 7
     }
   ],
   "technicians": [
