@@ -8,25 +8,39 @@
       "id": 1
     },
     {
-      "id": 2,
-      "message": "Fixed hard drive on workstation 002",
-      "attention": false,
-      "tech": "John Doe",
-      "date": "2021-05-31T16:18:04.245Z"
+      "message": "IPS panel damaged",
+      "tech": "1",
+      "attention": true,
+      "date": "2021-07-26T16:05:59.766Z",
+      "id": 2
     },
     {
-      "message": "Firefox new update",
-      "tech": "3",
-      "attention": true,
-      "date": "2021-07-25T07:25:51.780Z",
+      "message": "hdmi faulty",
+      "tech": "2",
+      "attention": false,
+      "date": "2021-07-26T16:06:12.633Z",
       "id": 3
     },
     {
-      "message": "chrome deleted",
-      "tech": "1",
-      "attention": false,
-      "date": "2021-07-25T07:26:04.411Z",
+      "message": "update mac os",
+      "tech": "3",
+      "attention": true,
+      "date": "2021-07-26T16:06:27.928Z",
       "id": 4
+    },
+    {
+      "id": 5,
+      "message": "prohance not logged in",
+      "tech": "2",
+      "attention": true,
+      "date": "2021-07-26T16:06:45.005Z"
+    },
+    {
+      "id": 6,
+      "message": "test sync",
+      "tech": "1",
+      "attention": true,
+      "date": "2021-07-26T16:07:07.247Z"
     }
   ],
   "technicians": [
