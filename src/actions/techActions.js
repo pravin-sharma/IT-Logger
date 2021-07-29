@@ -1,4 +1,4 @@
-import { GET_TECHS, ADD_TECH, DELETE_TECH, TECHS_ERROR, SET_LOADING, LOGS_ERROR } from "./types";
+import { GET_TECHS, ADD_TECH, DELETE_TECH, TECHS_ERROR, SET_LOADING } from "./types";
 
 export const getTechs = () => async (dispatch) => {
     try {
@@ -12,7 +12,7 @@ export const getTechs = () => async (dispatch) => {
         })
     } catch (error) {
         dispatch({
-            type: LOGS_ERROR,
+            type: TECHS_ERROR,
             payload: error.response.statusText
         });
     }
@@ -41,7 +41,25 @@ export const addTech = (firstName, lastName) => async (dispatch) => {
         })
     } catch (error) {
         dispatch({
-            type: LOGS_ERROR,
+            type: TECHS_ERROR,
+            payload: error.response.statusText
+        })
+    }
+}
+
+export const deleteTech = (id) => async(dispatch) =>{
+    try {
+        setLoading();
+        const response = await fetch(`/technicians/${id}`,{
+            method: 'DELETE'
+        })
+        dispatch({
+            type: DELETE_TECH,
+            payload: id
+        })
+    } catch (error) {
+        dispatch({
+            type: TECHS_ERROR,
             payload: error.response.statusText
         })
     }

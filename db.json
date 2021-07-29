@@ -36,11 +36,11 @@
       "id": 5
     },
     {
+      "id": 6,
       "message": "Mouse not working",
-      "tech": "John Doe",
+      "tech": "Harish Sharma",
       "attention": false,
-      "date": "2021-07-29T19:06:32.329Z",
-      "id": 6
+      "date": "2021-07-29T19:06:32.329Z"
     }
   ],
   "technicians": [
@@ -58,21 +58,6 @@
       "id": 3,
       "firstName": "Sara",
       "lastName": "Wilson"
-    },
-    {
-      "firstName": "Pravin",
-      "lastName": "Sharma",
-      "id": 4
-    },
-    {
-      "firstName": "Shikha",
-      "lastName": "Sharma",
-      "id": 5
-    },
-    {
-      "firstName": "Kaushal",
-      "lastName": "Sharma",
-      "id": 7
     }
   ]
 }
